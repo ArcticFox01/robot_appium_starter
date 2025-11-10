@@ -368,10 +368,6 @@ This framework follows **Page Object Model (POM)** design pattern:
 # Run with verbose logging
 robot --loglevel DEBUG tests/YourTest.robot
 
-# Use Robot Framework IDE for interactive debugging
-pip install robotframework-ride
-ride.py
-
 # Take screenshots on failure
 # Configure in ios_config.robot:
 # Library    AppiumLibrary    ...    run_on_failure=Capture Page Screenshot
