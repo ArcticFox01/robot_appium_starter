@@ -16,3 +16,4 @@ venv
 **/appium.log
 **/results/
 **/.claude/
+env.yaml
