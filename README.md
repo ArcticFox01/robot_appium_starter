@@ -423,7 +423,6 @@ pabot --testlevelsplit tests
 - [Appium Library Keywords](https://serhatbolsu.github.io/robotframework-appiumlibrary/AppiumLibrary.html)
 
 ### Tools & Extensions
-- [Robot Framework IDE (RIDE)](https://github.com/robotframework/RIDE)
 - [Appium Inspector](https://github.com/appium/appium-inspector)
 - [VS Code Robot Framework Extension](https://marketplace.visualstudio.com/items?itemName=TomoTaka.robotframework)
 
