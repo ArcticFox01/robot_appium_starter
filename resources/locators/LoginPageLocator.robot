@@ -1,4 +1,8 @@
 *** Variables ***
+${username}=                    testuser
+${password}=                    password123
+
+# Login Locators
 ${app_logo}=                    app_logo
 ${app_title}=                   app_title
 ${app_subtitle}=                app_subtitle

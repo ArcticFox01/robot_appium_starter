@@ -15,17 +15,13 @@ Suite Teardown    Suite Teardown Config
 As an iOS user, I should be able to see Error when input incorrect Username and Password
     [Documentation]  User should be able to see error message appear when input incorrect Username and Password
     LoginPage.Verify Login Page
-    LoginPage.Input Username        MyName
-    LoginPage.Input Password        Unknown
-    LoginPage.Click button Login
+    LoginPage.Perform Login    myname    pass
     LoginPage.Verify Error Appear   Login Error    Invalid credentials
     Click Element                   ${button_ok}
     LoginPage.Verify Error Popup Disappear
 
 As an iOS user, I should be redirected to "Products" Page when input correct Username and Password
-    [Documentation]  User should be able to see error message appear when input incorrect Username and Password
+    [Documentation]  User should be able see product page after loging in success
     LoginPage.Verify Login Page
-    LoginPage.Input Username        testuser
-    LoginPage.Input Password        password123
-    LoginPage.Click button Login
+    LoginPage.Perform Login    testuser    password123
     ProductsPage.Verify Header "Products" Appear

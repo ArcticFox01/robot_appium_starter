@@ -3,8 +3,6 @@ Variables  ../env.yaml
 Library    AppiumLibrary     timeout=${default_timeout}     run_on_failure=Log And Capture Error
 Library    Process
 Library    OperatingSystem
-Resource   ../resources/helpers/LoginHelper.robot
-
 
 *** Keywords ***
 Log And Capture Error
@@ -38,11 +36,6 @@ Suite Setup Config
 Test Setup Config
     Open iOS Application
     Sleep   ${fast_timeout}
-
-Test Setup Login
-    Open iOS Application
-    Sleep   ${fast_timeout}
-    LoginHelper.Login App    
 
 Test Teardown Config
     Close All Applications
